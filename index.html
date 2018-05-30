@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <header>
+            <h3>Cryptocurrency</h3>
+            <input type="text" id="search" placeholder="search..">
+        </header>
+        <div class = "data">
+            <!-- <div class = "dropdown" >
+                <button class="dropbtn" onclick="showDropDown()">Name <i class ="fa fa-caret-down"></i></button>
+                <div id = "myDropdown" class= "dropdown-content"  onclick="sortBy()"> -->
+                <select name="" id="sort">
+                    <option id ="name" value="Name">Name</option>
+                    <option id="price" value="Price">Price</option>
+                    <option id="rank" value="Rank">Rank</option>
+                </select>
+            <!-- </div>
+            </div> -->
+            <table id = "table" >
+                <tr class = "rows">
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Rank</th>
+                    <th>Change</th>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- use drop down to sort
+initially display 10 items ,display next items -->
