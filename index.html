@@ -13,21 +13,16 @@
     <div class = "container">
         <header>
             <h3>Cryptocurrency</h3>
-            <input type="text" id="search" placeholder="search..">
+            <input type="text" id="search" placeholder="search.." onchange="filterCoins()">
         </header>
         <div class = "data">
-            <!-- <div class = "dropdown" >
-                <button class="dropbtn" onclick="showDropDown()">Name <i class ="fa fa-caret-down"></i></button>
-                <div id = "myDropdown" class= "dropdown-content"  onclick="sortBy()"> -->
-                <select name="" id="sort">
+                <select name = "" id = "sort" onchange = "handleSort()">
                     <option id ="name" value="Name">Name</option>
                     <option id="price" value="Price">Price</option>
                     <option id="rank" value="Rank">Rank</option>
                 </select>
-            <!-- </div>
-            </div> -->
             <table id = "table" >
-                <tr class = "rows">
+                <tr class = "rows-header">
                     <th>#</th>
                     <th>Name</th>
                     <th>Price</th>
@@ -40,6 +35,3 @@
     </div>
 </body>
 </html>
-
-<!-- use drop down to sort
-initially display 10 items ,display next items -->
